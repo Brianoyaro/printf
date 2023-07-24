@@ -16,7 +16,7 @@ int printbighex(int n)
 		n *= -1;
 	}
 	if (n > 15)
-		printsmallhex(n / 16);
+		printbighex(n / 16);
 	count += _putchar(small[n % 16]);
 	return (count);
 }

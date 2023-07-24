@@ -14,7 +14,7 @@ int printoctal(int n)
 		n *= -1;
 	}
 	if (n > 7)
-		printnumber ((n / 8));
+		printoctal (n / 8);
 	count += _putchar((n % 8) + '0');
 	return (count);
 }

@@ -14,7 +14,7 @@ int printbinary(int n)
 		n *= -1;
 	}
 	if (n > 1)
-		printnumber ((n / 2));
+		printbinary (n / 2);
 	count += _putchar((n % 2) + '0');
 	return (count);
 }
