@@ -1,4 +1,3 @@
-#include <stdint.h>
 #include "main.h"
 int print_function(char c, va_list args);
 /**
@@ -34,6 +33,7 @@ int _printf(const char *format, ...)
  */
 int print_function(char c, va_list args)
 {
+	void *m;
 	int count = 0;
 	char ch;
 	char *str;
@@ -82,7 +82,7 @@ int print_function(char c, va_list args)
 	{
 		count += _putchar('0');
 		count += _putchar('x');
-		void *m = va_arg(args, void *);
+		m = va_arg(args, void *);
 		count += printpointer((uint64_t) m);
 	}
 	else if (c == '%')

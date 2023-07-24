@@ -6,7 +6,7 @@
  */
 int printnumber(int n)
 {
-	int count;
+	int count = 0;
 
 	if (n < 0)
 	{

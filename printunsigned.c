@@ -6,7 +6,7 @@
  */
 int printunsigned(int n)
 {
-	int count;
+	int count = 0;
 
 	if (n > 9)
 		printnumber (n / 10);
