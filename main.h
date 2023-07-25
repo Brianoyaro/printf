@@ -12,7 +12,7 @@ int printbinary(unsigned int ui);
 int _puts(char *str);
 int _putchar(char ch);
 int _printf(const char *format, ...);
-int printsmallhex(unsigned int ui;
+int printsmallhex(unsigned int ui);
 int printbighex(unsigned int ui);
 int printoctal(int n);
 int printunsigned(int n);
