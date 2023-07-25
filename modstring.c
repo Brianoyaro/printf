@@ -17,7 +17,8 @@ int modstring(char *str)
 		{
 			count += _putchar('\\');
 			count += _putchar('x');
-			count += _putchar(0 + '0');
+			if (*str < 16)
+				count += _putchar(0 + '0');
 			count += printbighex(*str);
 		}
 		++str;
