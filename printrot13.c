@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * printrot13 - prints a string in rot13
  * @str: string to ROT13
@@ -16,8 +17,13 @@ int printrot13(char *str)
 		for (i = 0; str1[i]; i++)
 		{
 			if (*str == str1[i])
+			{
 				count += _putchar(str2[i]);
+				break;
+			}
 		}
+		if (str1[i] == '\0')
+			count += _putchar(*str);
 		++str;
 	}
 	return (count);
