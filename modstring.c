@@ -11,9 +11,7 @@ int modstring(char *str)
 
 	while (*str)
 	{
-		if (*str >= 33 && *str < 127)
-			count += _putchar(*str);
-		else
+		if (*str >= 127 || (*str > 0 && *str < 32))
 		{
 			count += _putchar('\\');
 			count += _putchar('x');
@@ -21,6 +19,8 @@ int modstring(char *str)
 				count += _putchar(0 + '0');
 			count += printbighex(*str);
 		}
+		else
+			count += _putchar(*str);
 		++str;
 	}
 	return (count);
