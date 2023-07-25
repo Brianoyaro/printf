@@ -56,13 +56,13 @@ int print_function(char c, va_list args)
 		count += printnumber(n);
 	}else if (c == 'x')
 	{
-		n = va_arg(args, int);
-		count += printsmallhex(n);
+		ui = va_arg(args, unsigned int);
+		count += printsmallhex(ui);
 	}
 	else if (c == 'X')
 	{
-		n = va_arg(args, int);
-		count += printbighex(n);
+		ui = va_arg(args, unsigned int);
+		count += printbighex(ui);
 	}
 	else if (c == 'b')
 	{
