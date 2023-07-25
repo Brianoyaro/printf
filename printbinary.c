@@ -8,11 +8,6 @@ int printbinary(unsigned int ui)
 {
 	int count = 0;
 
-	if (ui < 0)
-	{
-		count += _putchar('-');
-		ui *= -1;
-	}
 	if (ui > 1)
 		printbinary(ui / 2);
 	count += _putchar((ui % 2) + '0');
