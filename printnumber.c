@@ -7,14 +7,17 @@
 int printnumber(int n)
 {
 	int count = 0;
+	unsigned int num;
 
 	if (n < 0)
 	{
 		count += _putchar('-');
-		n *= -1;
+		num = -n;
 	}
-	if (n > 9)
-		printnumber (n / 10);
-	count += _putchar((n % 10) + '0');
+	else
+		num = n;
+	if (num > 9)
+		printnumber(num / 10);
+	count += _putchar((num % 10) + '0');
 	return (count);
 }
