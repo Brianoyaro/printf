@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stdint.h>
+#include <stddef.h>
 int printrot13(char *str);
 int modstring(char *str);
 int reverse_string(char *str);
