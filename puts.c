@@ -8,8 +8,6 @@ int _puts(char *str)
 {
 	int count = 0;
 
-	if (str == NULL)
-		str = "(nil)";
 	while (*str)
 	{
 		_putchar(*str);
