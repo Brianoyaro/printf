@@ -11,7 +11,7 @@ int modstring(char *str)
 
 	while (*str)
 	{
-		if (*str >= 32 && *str < 127)
+		if (*str >= 33 && *str < 127)
 			count += _putchar(*str);
 		else
 		{
