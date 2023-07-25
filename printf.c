@@ -76,8 +76,8 @@ int print_function(char c, va_list args)
 	}
 	else if (c == 'u')
 	{
-		n = va_arg(args, int);
-		count += printunsigned(n);
+		ui = va_arg(args, unsigned int);
+		count += printunsigned(ui);
 	}
 	else if (c == 'p')
 	{

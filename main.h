@@ -15,7 +15,7 @@ int _printf(const char *format, ...);
 int printsmallhex(unsigned int ui);
 int printbighex(unsigned int ui);
 int printoctal(int n);
-int printunsigned(int n);
+int printunsigned(unsigned int ui);
 int printpointer(uint64_t n);
 #endif
 
