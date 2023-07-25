@@ -1,0 +1,40 @@
+_printf custom manual
+.name 
+   _printf
+.library
+	custom function
+.description
+	the _printf function writes to standard output what it receives as input while formating the output with user defined specifiers.
+	examples of specifiers incclude x, X, o, p.
+.conversion specifiers
+	Following are supported conversion specifiers in this _printf function.
+
+.s
+	prints a string literal
+.c
+	prints a character
+.i
+	prints an integer
+.d
+	prints a number in base 10
+.x
+	prints a number in lower case hexadecimal
+.X
+	prints a number in upper case hexadecimal
+.o
+	prints an unsigned number to octal form
+.p
+	prints pointer value
+.r
+	reverses a string and prints it
+.R
+	prints a string in rot13
+.u
+	prints an unsigned number
+.S
+	prints a string and non printable charactera are printed as follows: \x followed by the ASCII value of the character in two digit format
+
+See Also
+_puts, _putchar
+Authors
+Brian Oyaro and Erick Kuria
