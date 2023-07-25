@@ -26,7 +26,9 @@ int reverse_string(char *str)
 	int i;
 	int count = 0;
 
-	for (i = len; i >= 0; --i)
+	if (str == NULL)
+		str = "(nil)";
+	for (i = len - 1; i >= 0; --i)
 		count += _putchar(str[i]);
 	return (count);
 }
