@@ -33,6 +33,7 @@ int _printf(const char *format, ...)
  */
 int print_function(char c, va_list args)
 {
+	unsigned int ui;
 	void *m;
 	int count = 0;
 	char ch;
@@ -65,8 +66,8 @@ int print_function(char c, va_list args)
 	}
 	else if (c == 'b')
 	{
-		n = va_arg(args,int);
-		count += printbinary(n);
+		ui = va_arg(args,int);
+		count += printbinary(ui);
 	}
 	else if (c == 'o')
 	{

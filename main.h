@@ -7,7 +7,7 @@ int modstring(char *str);
 int reverse_string(char *str);
 int print_function(char c, va_list args);
 int printnumber(int n);
-int printbinary(int n);
+int printbinary(unsigned int ui);
 int _puts(char *str);
 int _putchar(char ch);
 int _printf(const char *format, ...);

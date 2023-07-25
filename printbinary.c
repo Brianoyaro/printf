@@ -4,17 +4,17 @@
  * @n: number to change to binary
  * Return: number of characters in binary number
  */
-int printbinary(int n)
+int printbinary(unsigned int ui)
 {
 	int count = 0;
 
-	if (n < 0)
+	if (ui < 0)
 	{
 		count += _putchar('-');
-		n *= -1;
+		ui *= -1;
 	}
-	if (n > 1)
-		printbinary (n / 2);
-	count += _putchar((n % 2) + '0');
+	if (ui > 1)
+		printbinary(ui / 2);
+	count += _putchar((ui % 2) + '0');
 	return (count);
 }
